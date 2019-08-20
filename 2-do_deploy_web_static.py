@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # script that generates a .tgz archive from the contents of the web_static
-from fabric.api import local
+from fabric.api import local, env, run, put
 from os import path
 
 env.hosts = ['104.196.157.169', '34.73.109.46']
