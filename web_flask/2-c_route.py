@@ -19,9 +19,10 @@ def hbnb():
 
 
 @app.route('/c/<text>')
-def c(text=''):
+def c(text):
     """Func c"""
-    return 'c {}'.format(text)
+    text = text.replace("_"," ")
+    return 'C {}'.format(text)
 
 
 if __name__ == '__main__':
