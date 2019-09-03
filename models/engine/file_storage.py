@@ -73,6 +73,10 @@ class FileStorage:
                 del self.__objects[key_obj]
                 self.save()
 
+    def close(self):
+        """ method for deserializing the JSON file to objects"""
+        self.reload()
+
     @property
     def cities(self):
         dict_cls = self.all(City)
