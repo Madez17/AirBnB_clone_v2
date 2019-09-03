@@ -19,7 +19,7 @@ def hbnb():
 
 
 @app.route('/c/<text>')
-def c(text = ''):
+def c(text=''):
     """Func c"""
     return 'c {}'.format(text)
 
