@@ -19,7 +19,7 @@ def states():
 
 
 @app.teardown_appcontext
-def teardown(exception=False):
+def teardown(exception=None):
     storage.close()
 
 if __name__ == '__main__':
