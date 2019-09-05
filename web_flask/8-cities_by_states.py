@@ -22,8 +22,8 @@ def states():
     for iter in states_dic:
         dict_cities[states_dic[iter].id] = states_dic[iter].cities
 
-
-    return render_template('8-cities_by_states.html', state=dict_states, city=dict_cities)
+    return render_template('8-cities_by_states.html', state=dict_states,
+                           city=dict_cities)
 
 
 @app.teardown_appcontext
